@@ -1,0 +1,54 @@
+{
+  "name": "stellar-react-native-wallet-sdk",
+  "version": "0.1.0",
+  "description": "React Native Wallet SDK for Stellar blockchain",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint 'src/**/*.ts'",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolgayayci/stellar-react-native-wallet-sdk.git"
+  },
+  "keywords": [
+    "stellar",
+    "blockchain",
+    "wallet",
+    "sdk",
+    "react-native"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tolgayayci/stellar-react-native-wallet-sdk/issues"
+  },
+  "homepage": "https://github.com/tolgayayci/stellar-react-native-wallet-sdk#readme",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^11.1.0",
+    "react-native-keychain": "^8.1.2",
+    "react-native-get-random-values": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@types/react-native": "^0.71.6",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "resolutions": {
+    "react": "^18.2.0"
+  }
+}
